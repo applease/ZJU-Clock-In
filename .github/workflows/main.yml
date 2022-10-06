@@ -12,7 +12,8 @@ on:
 jobs:
   ClockIn:
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id or True
+    # if: github.event.repository.owner.id == github.event.sender.id
+    if: True
     steps:
       - name: Checkout
         uses: actions/checkout@master
